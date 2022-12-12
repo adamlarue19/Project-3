@@ -1,20 +1,27 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import logo from './logo.svg';
+import Home from './Home';
+import Workout from './Workout';
 import './App.css';
 
 function App() {
   return (
     <Router>
     <div className="App">
-      <Navbar />
+      <header className="App-header">
         <div className='content'>
           <Switch>
         <Route path='/'>
           <Home />
         </Route>
+        <Route path="/workouts">
+          <Workout />
+        </Route>
           </Switch>
+            <p>
+          Fill in homepage info and content here
+          </p>
         </div>
-
+      </header>
     </div>
     </Router>
   );
