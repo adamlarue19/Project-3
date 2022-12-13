@@ -1,3 +1,8 @@
-const Profile = require('./Profile');
+const User = require('./User');
+const Workout = require('./Workout')
+const Cardio = require('./Cardio')
+const Exercise = require('./Exercise')
 
-module.exports = { Profile };
+
+
+module.exports = { User, Workout, Cardio, Exercise }
