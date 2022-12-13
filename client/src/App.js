@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Workout from './Workout';
+import Navbar from './Navbar';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+       <Navbar />
           <div className="content">
             <Switch>
               <Route exact path="/workouts">
@@ -19,7 +20,6 @@ function App() {
             </Switch>
             <p>Fill in homepage info and content here</p>
           </div>
-        </header>
       </div>
     </Router>
   );

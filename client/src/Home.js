@@ -11,9 +11,9 @@ class Home extends React.Component {
   render() {
     return (
     <h2>Homepage test</h2>
-    <p> this is test text written in the p element, for the homepage.js file in our react app.</p>
+
     );
-    return 
+
   }
 
   componentDidMount() {
