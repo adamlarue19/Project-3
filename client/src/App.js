@@ -6,23 +6,21 @@ import './App.css';
 function App() {
   return (
     <Router>
-    <div className="App">
-      <header className="App-header">
-        <div className='content'>
-          <Switch>
-        <Route path='/'>
-          <Home />
-        </Route>
-        <Route path="/workouts">
-          <Workout />
-        </Route>
-          </Switch>
-            <p>
-          Fill in homepage info and content here
-          </p>
-        </div>
-      </header>
-    </div>
+      <div className="App">
+        <header className="App-header">
+          <div className="content">
+            <Switch>
+              <Route exact path="/workouts">
+                <Workout />
+              </Route>
+              <Route exact path="/">
+                <Home />
+              </Route>
+            </Switch>
+            <p>Fill in homepage info and content here</p>
+          </div>
+        </header>
+      </div>
     </Router>
   );
 }
