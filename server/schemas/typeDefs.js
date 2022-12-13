@@ -1,22 +1,40 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type Profile {
+  type User {
     _id: ID
+    username: String
+    email: String
+    password: String
+  }
+
+  type Workout {
+    name: string
+    exercise: [Exercise]
+  }
+
+  type Exercise {
     name: String
-    skills: [String]!
+    weight: Number
+    reps: Number
+    sets: Number
+  }
+
+  type Cardio {
+    name: String
+    distance: Number
+    time: Number
   }
 
   type Query {
-    profiles: [Profile]!
-    profile(profileId: ID!): Profile
+    users: [User]
+    workouts: [Workout]
+    exercises: [Exercise]
+    cardios: [Cardio]
   }
 
   type Mutation {
-    addProfile(name: String!): Profile
-    addSkill(profileId: ID!, skill: String!): Profile
-    removeProfile(profileId: ID!): Profile
-    removeSkill(profileId: ID!, skill: String!): Profile
+    
   }
 `;
 
