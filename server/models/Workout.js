@@ -6,18 +6,10 @@ const workoutSchema = new Schema({
         required: true,
         trim: true,
     },
-    weight: {
-        type: Number,
+    exercise: {
+        type: String,
         trim: true,
-    },
-    reps: {
-        type: Number,
-        trim: true,
-    },
-    sets: {
-        type: Number,
-        trim: true,
-    },
+    }
 });
 
 const Workout = model('Workout', workoutSchema);
