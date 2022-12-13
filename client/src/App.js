@@ -1,13 +1,27 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from '../Home';
+import Workout from '../Workout';
+import Navbar from '../Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-        <header>
-          This is GIT-FIT
-        </header>
-    </div>
+    <Router>
+      <div className="App">
+       <Navbar />
+          <div className="content">
+            <Switch>
+              <Route exact path="/workouts">
+                <Workout />
+              </Route>
+              <Route exact path="/">
+                <Home />
+              </Route>
+            </Switch>
+            <p>Fill in homepage info and content here</p>
+          </div>
+      </div>
+    </Router>
   );
 }
 
