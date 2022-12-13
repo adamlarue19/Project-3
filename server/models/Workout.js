@@ -6,10 +6,12 @@ const workoutSchema = new Schema({
         required: true,
         trim: true,
     },
-    exercise: {
-        type: String,
-        trim: true,
-    }
+    exercises: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Exercise'
+        }
+    ]
 });
 
 const Workout = model('Workout', workoutSchema);
