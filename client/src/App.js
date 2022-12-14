@@ -28,7 +28,7 @@ function App() {
               <Workout />
             </Route>
           </Switch>
-          <p>Fill in homepage info and content here</p>
+          {/* <p>Fill in homepage info and content here</p> */}
         </div>
         {/* <Footer /> */}
 
