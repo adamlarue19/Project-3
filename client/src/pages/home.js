@@ -58,6 +58,7 @@ const Home = () => {
           <button>Start Now</button>
         </div>
         <div className='image-container'>
+          {/* Imported image */}
           <img src={image}></img>
         </div>
       </div>

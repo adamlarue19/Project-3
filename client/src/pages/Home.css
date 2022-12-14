@@ -68,7 +68,7 @@ body {
   .image-container > img{
     width:100%;
   }
-
+/* Media Queries */
   @media screen and (max-width: 767px) {
     .text-container > h1{
       font-size:3.5em;
