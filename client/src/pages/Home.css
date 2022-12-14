@@ -27,11 +27,13 @@ body {
     width:85%;
     margin: 0 auto;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     padding:40px 0px;
+    /* border:1px solid green; */
+    justify-content: space-around;
   }
   .text-container{
-    width:60%;
+    width:55%;
     min-width:400px;
     /* border:1px solid green; */
     text-align: left;
@@ -58,7 +60,17 @@ body {
     font-size: 1em;
   }
   .image-container{
-    width:30%;
+    width:40%;
+    max-width:500px;
     min-width:400px;
-    border:1px solid blue;
+    /* border:1px solid blue; */
+  }
+  .image-container > img{
+    width:100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .text-container > h1{
+      font-size:3.5em;
+    }
   }

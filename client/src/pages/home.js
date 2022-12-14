@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Home.css"
+import image from "../images/main-image.png"
 // import { useQuery } from '@apollo/client';
 
 // class Home extends React.Component {
@@ -56,7 +57,9 @@ const Home = () => {
           </p>
           <button>Start Now</button>
         </div>
-        <div className='image-container'></div>
+        <div className='image-container'>
+          <img src={image}></img>
+        </div>
       </div>
     </section>
   )
