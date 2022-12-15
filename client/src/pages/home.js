@@ -1,7 +1,9 @@
 import React from 'react';
+
 import "./Home.css"
 import image from "../images/main-image.png"
 // import { useQuery } from '@apollo/client';
+
 
 // class Home extends React.Component {
 //   constructor() {
@@ -9,6 +11,7 @@ import image from "../images/main-image.png"
 //     this.state = {
 //       someKey: 'someValue'
 //     };
+
 //   }
 
 //   render() {
@@ -61,12 +64,16 @@ const Home = () => {
         <div className='image-container'>
           {/* Imported image */}
           <img src={image}></img>
+
         </div>
+
+        <Search />
       </div>
     </section>
     <section></section>
     </div>
   )
 }
+
 
 export default Home;

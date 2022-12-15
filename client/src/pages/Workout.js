@@ -1,22 +1,17 @@
 import React from 'react';
 
-class Workout extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      someKey: 'someValue'
-    };
-  }
 
-  render() {
-    return <p>{this.state.someKey}</p>;
-  }
+const Workouts = () => {
+return (
+	<div>
+	<h1>
+		GeeksforGeeks is a Computer
+		Science portal for geeks.
+	</h1>
+	</div>
+);
+};
 
-  componentDidMount() {
-    this.setState({
-      someKey: 'otherValue'
-    });
-  }
-}
+export default Workouts;
 
-export default Workout;
+

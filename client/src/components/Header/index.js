@@ -1,7 +1,10 @@
 import React from "react";
+
 import "./header.css"
 
 import { Link } from "react-router-dom";
+
+
 
 // const Header = () => {
 //   const navbarHeader = "Navbar";
@@ -32,6 +35,7 @@ function test(){
 
 const Header = () => {
   return (
+
     <header>
       <div className="header-container">
         <div className="brand-logo" onClick={test}>
