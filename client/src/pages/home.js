@@ -47,6 +47,7 @@ import image from "../images/main-image.png"
 
 const Home = () => {
   return (
+    <div>
     <section className='hero-section'>
       <div className='hero-container'>
         <div className='text-container'>
@@ -63,6 +64,8 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <section></section>
+    </div>
   )
 }
 
