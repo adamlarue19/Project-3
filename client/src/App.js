@@ -5,6 +5,7 @@ import Workout from "./pages/Workout";
 import Login from "./pages/Login"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Test from "./pages/Test";
 
 import "./App.css";
 
@@ -30,7 +31,10 @@ function App() {
               path="/workouts"
               element={<Workout />}
             />
-            
+            <Route
+              path="/test"
+              element={<Test />}
+            />
           </Routes>
           {/* <p>Fill in homepage info and content here</p> */}
 
