@@ -1,14 +1,21 @@
 import React from 'react';
+import SearchForm from './Test';
 
 
 const Workouts = () => {
+	let muscle="biceps"
+	
+
+	
 return (
+	
 	<div>
 	<h1>
-		GeeksforGeeks is a Computer
-		Science portal for geeks.
+		Enter the muscle you wanna work man
 	</h1>
+	<SearchForm />
 	</div>
+	
 );
 };
 
