@@ -14,10 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+
+
     "concurrently": "^5.1.0"
   },
   "dependencies": {
     "react-router-dom": "^6.4.5",
     "styled-components": "^5.3.6"
+
   }
 }

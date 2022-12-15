@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    --red: #d43838;
+    --green:#38d467;
+}
+header{
+    background-color: #030202;
+    font-family: 'Syne', sans-serif;
+}
+.header-container{
+    width:85%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0px;
+}
+.brand-logo > h1{
+    color:white;
+    font-weight: 700;
+    font-size:2.45em;
+}
+.orange-red{
+    color:var(--red)
+}
+nav > a{
+    margin:0px 15px;
+    color:white;
+}
+.button-container{
+    display:flex;
+    align-items: center;
+}
+.log-in-btn{
+    color:white;
+    margin:0px 15px;
+}
+.sign-up-btn {
+    padding:10px 20px;
+    color:white;
+    background-color: var(--red);
+    border:none;
+    border-radius:8px;
+    margin:0px 15px;
+}
+#menu{
+    display:none;
+}
+/* TABLETS PORTRAIT */
+@media screen and (max-width: 767px) {
+    .header-container{
+        width:90%;
+        align-items: center;
+    }
+    .brand-logo > h1{
+        font-size: 2.15em;
+    }
+    nav{
+        display:none;
+    }
+    .log-in-btn, .sign-up-btn{
+        display:none;
+    }
+    #menu{
+        display:block;
+        color:white;
+    }
+}

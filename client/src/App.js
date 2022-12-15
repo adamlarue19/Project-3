@@ -14,11 +14,23 @@ function App() {
       <div className="App">
         <Header />
         <div className="content">
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/workouts" element={<Workout/>} />
-            <Route path="/login" element={<Login/>} />
-          </Routes>
+
+          <Switch>
+            <Route 
+            path="/" 
+            elements={<Home />}
+            >
+              <Home />
+            </Route>
+            <Route 
+            path="/workouts" 
+            elements={<Workout />}
+            >
+              <Workout />
+            </Route>
+          </Switch>
+          {/* <p>Fill in homepage info and content here</p> */}
+
         </div>
         <Footer />
       </div>
