@@ -72,13 +72,13 @@ code {
 }
 section {
   background-color: #030202;
+  margin-bottom: 10vh;
 }
 .main-Container {
-display: flex;
-flex-direction: column;
-margin: 20px;
-align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
 }
 .about-Container {
   color: white;
@@ -98,6 +98,7 @@ align-items: center;
   border-radius: 20px;
   height: auto;
   width: 120vh;
+  margin-top: 10vh;
 }
 .searchBar {
   width: 500px;
@@ -108,7 +109,7 @@ align-items: center;
 .searchInfo {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .information {
   margin: 5vh;
