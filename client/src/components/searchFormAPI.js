@@ -1,6 +1,7 @@
 import React from 'react';
+import { apiCall } from '../utils/apiAxios';
 
-class Workout extends React.Component {
+class SearchFormAPI extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -19,4 +20,4 @@ class Workout extends React.Component {
   }
 }
 
-export default Workout;
+export default SearchFormAPI;

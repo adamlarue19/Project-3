@@ -1,4 +1,5 @@
 import React from 'react';
+import { apiCall } from '../utils/apiAxios';
 
 class Workout extends React.Component {
   constructor() {

@@ -1,9 +1,9 @@
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home.js";
+import Home from "./pages/Home";
 import Workout from "./pages/Workout";
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Test from "./pages/Test";
 
 import "./App.css";
 
@@ -16,10 +16,10 @@ function App() {
         <div className="content">
           <Switch>
             <Route 
-            path="/" 
+            exactpath="/" 
             elements={<Home />}
             >
-              <Home />
+              {/* <Home /> */}
             </Route>
             <Route 
             path="/workouts" 
@@ -27,10 +27,15 @@ function App() {
             >
               <Workout />
             </Route>
+            <Route 
+            exactpath="/test" 
+            elements={<Test />}
+            >
+              <Test />
+            </Route>
           </Switch>
           <p>Fill in homepage info and content here</p>
         </div>
-        {/* <Footer /> */}
 
       </div>
     </Router>
