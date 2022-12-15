@@ -1,46 +1,42 @@
 import React from 'react';
-// import { useQuery } from '@apollo/client';
 
-class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      someKey: 'someValue'
-    };
-  }
 
-  render() {
-    return (
-      <div className="mainConatiner">
-      <div className="aboutContainer">
-        <div className="headingGitFit">
-          <h2>About Git-Fit</h2>
+import Search from "../components/Search";
+import About from "../components/About";
+
+// class Home extends React.Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       someKey: 'someValue'
+//     };
+//   };
+
+ const Home = () => {
+  return (
+    <main>
+      <div className="flex-row justify-center">
+        <div
+          className="col-12 col-md-10 mb-3 p-3"
+          style={{ border: "1px dotted #1a1a1a" }}
+        >
+          <About />
         </div>
+
+        <Search />
       </div>
-      <p className="pGitFit">This is the about Git-Fit section</p>
+    </main>
+  );
+};
 
-      <div className="searchContainer">
-        <input
-          type="text"
-          placeholder="Search here"
-          // onChange={handleChange}
-          // value={searchInput}
-        />
-        <div className="searchInfo">
-          This is going to be where the information displays
-        </div>
-      </div>
-    </div>
 
-    );
 
-  }
+//   componentDidMount() {
+//     this.setState({
+//       someKey: 'otherValue'
+//     });
+//   }
+// };
 
-  componentDidMount() {
-    this.setState({
-      someKey: 'otherValue'
-    });
-  }
-}
 
 export default Home;
