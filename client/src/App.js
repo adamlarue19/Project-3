@@ -15,20 +15,18 @@ function App() {
         <Header />
         <div className="content">
 
-          <Switch>
-            <Route 
-            path="/" 
-            elements={<Home />}
-            >
-              <Home />
-            </Route>
-            <Route 
-            path="/workouts" 
-            elements={<Workout />}
-            >
-              <Workout />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route
+              path="/"
+              element={<Home />}
+            />
+            
+            <Route
+              path="/workouts"
+              element={<Workout />}
+            />
+            
+          </Routes>
           {/* <p>Fill in homepage info and content here</p> */}
 
         </div>
@@ -38,5 +36,4 @@ function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;
