@@ -26,7 +26,26 @@ const Home = () => {
         {/* <Search /> */}
       </div>
     </section>
-    <section></section>
+    <section className="main-Conatiner">
+          <div className="about-Container">
+            <div className="headingGitFit">
+              <h2>About Git-Fit</h2>
+            </div>
+          </div>
+          <p className="pGitFit">This is the about Git-Fit section</p>
+
+          <div className="searchContainer">
+            <input className="searchBar"
+              type="text"
+              placeholder="Search here"
+              // onChange={handleChange}
+              // value={search}
+            />
+            <div className="searchInfo">
+              This is going to be where the information displays
+            </div>
+          </div>
+      </section>
     </div>
   )
 }
