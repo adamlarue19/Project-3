@@ -2,6 +2,10 @@ import React from 'react';
 import SearchForm from './Test';
 
 
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Workouts = () => {
 	let muscle="biceps"
 	
@@ -14,6 +18,7 @@ return (
 		Enter the muscle you wanna work man
 	</h1>
 	<SearchForm />
+
 	</div>
 	
 );

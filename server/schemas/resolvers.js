@@ -1,4 +1,5 @@
 const { User } = require('../models');
+const { Workout } = require('../models');
 const { signToken } = require('../utils/auth')
 
 const resolvers = {
@@ -10,7 +11,14 @@ const resolvers = {
     user: async (parent, { profileId }) => {
       return User.findOne({ _id: profileId });
     },
+    workouts: async () => {
+      return Workout.find();
+    },
+    workout: async (parent, { workoutId }) => {
+      return Workout.findOne({ _id: workoutId });
+
   },
+},
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
@@ -18,7 +26,7 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    
+
     removeUser: async (parent, { profileId }) => {
       return User.findOneAndDelete({ _id: profileId });
     },
@@ -38,6 +46,18 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+  
+    addWorkout: async (parent, { userId, name }) => {
+      // create workout with the name
+      const newWorkout = await Workout.create({name: name});
+      // push the workout into the current user
+      const user = await User.findByIdAndUpdate(
+        { _id: userId},
+        {$push:{workouts: newWorkout._id}},
+        {new: true}
+        );
+        return newWorkout;
     }
   },
 };

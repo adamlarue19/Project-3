@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "./footer.css"
+
 
 const Footer = () => {
     // We retrieve the current `location` object data from React Router

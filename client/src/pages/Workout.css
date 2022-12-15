@@ -1,0 +1,16 @@
+
+
+  .workout-container{
+    border-color: black;
+    border-radius:15px;
+   
+
+  }
+
+  .workout{
+    border-color: black;
+    border-width: 15px;
+    border-style: solid;
+    font-size: 20px;
+    height:40vh
+  }

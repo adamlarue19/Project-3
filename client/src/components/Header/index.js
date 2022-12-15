@@ -28,7 +28,7 @@ const Header = () => {
           <a>Newsletter</a>
         </nav>
         <div className="button-container">
-          <p className="log-in-btn">Log in</p>
+          <a href="/Login" className="log-in-btn">Log in</a>
           <button className="sign-up-btn">Register</button>
           <p id="menu">&#9776;</p>
         </div>
