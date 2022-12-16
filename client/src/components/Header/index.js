@@ -2,8 +2,6 @@ import React from "react";
 
 import "./header.css"
 
-import { Link } from "react-router-dom";
-
 
 // function test(){
 //   console.log("Test!")
@@ -19,7 +17,6 @@ const Header = () => {
       <div className="header-container">
         <div className="brand-logo" onClick={test}>
           <h1 onClick={()=>console.log("working")}>Git<span className="orange-red">Fit</span></h1>
-          <h1 onClick={()=>console.log("working")}>asdadasdsa</h1>
         </div>
         <nav>
           <a href="/">Home</a>

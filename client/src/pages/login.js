@@ -4,6 +4,7 @@ import "./login.css";
 
 const Login = () => {
   return (
+    <body>
     <section className="main-Container">
       <section>
         <h1 className="lTitle">Login</h1>
@@ -44,6 +45,7 @@ const Login = () => {
         </button>
       </form>
     </section>
+    </body>
   );
 };
 

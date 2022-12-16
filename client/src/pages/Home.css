@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #030202
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@400;700&display=swap");
