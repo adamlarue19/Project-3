@@ -9,6 +9,11 @@
   margin-top: 15vh;
 }
 .lTitle {
-    color: white;
-    
+  color: white;
+}
+.main-Container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
 }
