@@ -5,7 +5,8 @@ import image from "../images/main-image.png";
 
 const Home = () => {
   return (
-    <div>
+    <body>
+    <div className="space">
       <section className="hero-section">
         <div className="hero-container">
           <div className="text-container">
@@ -16,7 +17,9 @@ const Home = () => {
               Want to be healthier? Join the program and receive workout plans
               that best match your fitness goals.
             </p>
-            <button>Start Now</button>
+            <button>
+              <a href="/register">Start Now</a>
+            </button>
           </div>
           <div className="image-container">
             {/* Imported image */}
@@ -33,8 +36,8 @@ const Home = () => {
           </div>
           <p className="pGitFit">This is the about Git-Fit section</p>
         </div>
-        </section>
-        <section className="main-Container">
+      </section>
+      <section className="main-Container">
         <div className="searchContainer">
           <div className="searchTitle">Search for an excersise</div>
           <input
@@ -53,9 +56,13 @@ const Home = () => {
         </div>
       </section>
       <section className="main-Container">
-        
+        <div className="bmiExample">
+          <div className="bmiImage">Image here</div>
+          <div className="bmiText">This is the text for the bmi image</div>
+        </div>
       </section>
     </div>
+    </body>
   );
 };
 

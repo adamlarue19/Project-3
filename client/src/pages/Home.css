@@ -1,3 +1,6 @@
+html {
+  background-color: #030202;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,15 +8,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #030202
 }
-html {
-  background-color: #030202;
-}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@400;700&display=swap");
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.space {
+  background-color: #030202;
 }
 
 * {
@@ -120,6 +126,35 @@ section {
   height: auto;
 }
 .video {
+  margin: 5vh;
+  margin-right: 8vh;
+  border: red;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  height: auto;
+}
+.bmiExample {
+  color: white;
+  border: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 20px;
+  height: 20vh;
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.bmiImage {
+  margin: 5vh;
+  border: red;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  height: auto;
+}
+.bmiText {
   margin: 5vh;
   margin-right: 8vh;
   border: red;
