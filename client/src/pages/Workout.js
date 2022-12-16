@@ -7,8 +7,6 @@ import SearchForm from './Test';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Workouts = () => {
-	let muscle="biceps"
-	
 
 	
 return (
