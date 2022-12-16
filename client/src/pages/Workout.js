@@ -3,8 +3,6 @@ import SearchForm from './Test';
 
 
 const Workouts = () => {
-	let muscle="biceps"
-	
 
 	
 return (

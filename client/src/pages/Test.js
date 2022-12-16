@@ -19,11 +19,11 @@ const SearchForm = () => {
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
+    console.log(formState+"line 22");
     
     const data = await apiCall(formState.muscle);
     setResults(data)
-    console.log(results);
+    console.log(results+"line 26");
 // data right here 
     // clear form values
     setFormState({
@@ -35,7 +35,7 @@ const SearchForm = () => {
 
     <div className="col-12 col-lg-10">
         <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Replace </h4>
+          <h4 className="card-header bg-dark text-light p-2">Replace this </h4>
           <div className="card-body">
           
               <form onSubmit={handleFormSubmit}>
@@ -56,7 +56,16 @@ const SearchForm = () => {
                   Submit
                 </button>
               </form>
-{results.map((exercise) => JSON.stringify(exercise))}
+<div>{
+results?.map((data) => <li>{data.name}</li>)
+
+/* {results&&results?.map((data) => {
+    <div>
+       <li><strong>Name:</strong> {data.name}</li>
+      <h3>THIS IS TEST SEE IF THIS SHOWS</h3>
+    </div>
+  
+})} */}</div>
           </div>
         </div>
       </div>
