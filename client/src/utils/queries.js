@@ -9,6 +9,16 @@ export const QUERY_USER = gql`
     }
   }
 `;
+export const QUERY_EXERCISE =gql`
+query Query($exerciseId: ID!) {
+  exercise(exerciseId: $exerciseId) {
+    name
+    reps
+    sets
+    weight
+  }
+}
+`
 export const QUERY_WORKOUTS = gql`
 query getuserData {
   users {
@@ -28,5 +38,4 @@ query getuserData {
     }
   }
 }
-
 `
