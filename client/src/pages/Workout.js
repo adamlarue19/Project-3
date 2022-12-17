@@ -27,8 +27,6 @@ const Workouts = () => {
           </div>
         </div>
       </section>
-      <h1>Enter the muscle you wanna work man</h1>
-      <SearchForm />
     </body>
   );
 };
