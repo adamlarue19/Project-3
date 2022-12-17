@@ -58,7 +58,7 @@ const SearchForm = () => {
 <div>{
 results?.map((data, i) => <li key={i}>{data.name}</li>)
 
-/* {results&&results?.map((data) => {
+/*{results&&results?.map((data) => {
     <div>
        <li><strong>Name:</strong> {data.name}</li>
       <h3>THIS IS TEST SEE IF THIS SHOWS</h3>
