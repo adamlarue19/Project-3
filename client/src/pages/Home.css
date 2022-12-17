@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #030202
+  background-color: #030202;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@400;700&display=swap");
@@ -87,13 +87,37 @@ section {
   align-items: center;
 }
 .about-Container {
+color: white;
+}
+.howContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh;
+  justify-content: space-evenly;
+}
+.container1 {
   color: white;
   border: white;
-  border-width: 3px;
   border-style: solid;
   border-radius: 20px;
-  height: 20vh;
-  width: 100vh;
+  height: 25vh;
+  width: 25vh;
+}
+.container2 {
+  color: white;
+  border: white;
+  border-style: solid;
+  border-radius: 20px;
+  height: 25vh;
+  width: 25vh;
+}
+.container3 {
+  color: white;
+  border: white;
+  border-style: solid;
+  border-radius: 20px;
+  height: 25vh;
+  width: 25vh;
 }
 
 .searchContainer {
@@ -106,11 +130,10 @@ section {
   width: 120vh;
   margin-top: 10vh;
 }
-.searchBar {
-  width: 500px;
-  height: 30px;
-  margin: 50px;
-  border-radius: 8px;
+.searchMenu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 .searchInfo {
   display: flex;
@@ -119,7 +142,7 @@ section {
 }
 .information {
   margin: 5vh;
-  border: red;
+  border: white;
   border-width: 2px;
   border-style: solid;
   border-radius: 5px;
