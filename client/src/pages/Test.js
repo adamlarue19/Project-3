@@ -21,8 +21,10 @@ const SearchForm = () => {
     console.log(formState+"line 22");
     console.log(formState.muscle)
     const data = await apiCall(formState.muscle);
+
     console.log(data);
     setResults(data.data)
+
 // data right here 
     // clear form values
     setFormState({
@@ -47,6 +49,12 @@ const SearchForm = () => {
                   onChange={handleChange}
                 />
 
+
+<div>{
+results?.map((muscle) => <li>json.stringify{muscle.muscle}</li>)
+
+}</div>
+
                 <button
                   className="btn btn-block btn-info"
                   style={{ cursor: 'pointer' }}
@@ -58,6 +66,7 @@ const SearchForm = () => {
 <div>{
 results?.map((data, i) => <li key={i}>{data.name}</li>)
 
+
 /*{results&&results?.map((data) => {
     <div>
        <li><strong>Name:</strong> {data.name}</li>
@@ -65,6 +74,7 @@ results?.map((data, i) => <li key={i}>{data.name}</li>)
     </div>
   
 })} */}</div>
+
           </div>
         </div>
       </div>

@@ -6,11 +6,27 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      thoughts {
-        _id
-        thoughtText
-        createdAt
-      }
     }
   }
 `;
+export const userData = gql`
+query getuserData {
+  users {
+    _id
+    email
+    password
+    username
+    workouts {
+      _id
+      name
+      exercises {
+        name
+        reps
+        sets
+        weight
+      }
+    }
+  }
+}
+
+`
