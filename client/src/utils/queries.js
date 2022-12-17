@@ -9,7 +9,7 @@ export const QUERY_USER = gql`
     }
   }
 `;
-export const userData = gql`
+export const QUERY_WORKOUTS = gql`
 query getuserData {
   users {
     _id
