@@ -29,6 +29,7 @@ const Workouts = () => {
       </section>
     </body>
   );
+
 };
 
 export default Workouts;

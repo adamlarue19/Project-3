@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { json } from 'react-router-dom';
 // import { useQuery } from '@apollo/client';
 import {apiCall} from "../utils/axiosApi"
 
@@ -20,10 +19,12 @@ const SearchForm = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState+"line 22");
-    
+    console.log(formState.muscle)
     const data = await apiCall(formState.muscle);
-    setResults(data)
-    console.log(data+"line 26");
+
+    console.log(data);
+    setResults(data.data)
+
 // data right here 
     // clear form values
     setFormState({
@@ -63,9 +64,17 @@ results?.map((muscle) => <li>json.stringify{muscle.muscle}</li>)
                 </button>
               </form>
 <div>{
-results?.map((data) => <li>{data.name}</li>)
+results?.map((data, i) => <li key={i}>{data.name}</li>)
 
-}</div>
+
+/*{results&&results?.map((data) => {
+    <div>
+       <li><strong>Name:</strong> {data.name}</li>
+      <h3>THIS IS TEST SEE IF THIS SHOWS</h3>
+    </div>
+  
+})} */}</div>
+
           </div>
         </div>
       </div>
