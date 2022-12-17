@@ -2,10 +2,11 @@ import React from "react";
 import SearchForm from "./Test";
 import "./Workout.css";
 import Carousel from "../components/Excersise/index"
+import Workouts from "../components/Workouts/index"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Workouts = () => {
+const Workout = () => {
 
   return (
     <body className="body">
@@ -20,6 +21,7 @@ const Workouts = () => {
       </section>
       <section className="main-Container">
         <div className="workoutContainer">
+          <Workouts />
           <div className="searchTitle">Workouts</div>
           <div className="searchInfo">
             <div className="information">Create your own workouts</div>
@@ -32,4 +34,4 @@ const Workouts = () => {
 
 };
 
-export default Workouts;
+export default Workout;
