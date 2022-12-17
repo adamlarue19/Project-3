@@ -2,14 +2,14 @@ import React from "react";
 import SearchForm from "./Test";
 import "./Workout.css";
 import Carousel from "../components/Excersise/index"
-import Workouts from "../components/Workouts/index"
+// import Workouts from "../components/Workouts/index"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Workout = () => {
 
   return (
-    <body className="body">
+    <div className="body">
       <section className="main-Container">
         <div className="excercise-Container">
           <div className="excerciseTitle">
@@ -21,7 +21,7 @@ const Workout = () => {
       </section>
       <section className="main-Container">
         <div className="workoutContainer">
-          <Workouts />
+          {/* <Workouts /> */}
           <div className="searchTitle">Workouts</div>
           <div className="searchInfo">
             <div className="information">Create your own workouts</div>
@@ -29,7 +29,7 @@ const Workout = () => {
           </div>
         </div>
       </section>
-    </body>
+    </div>
   );
 
 };
