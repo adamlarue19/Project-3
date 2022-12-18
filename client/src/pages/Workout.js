@@ -7,6 +7,7 @@ import WorkoutForm from "../components/WorkoutForm/index"
 import WorkoutList from "../components/WorkoutList/index"
 import { QUERY_WORKOUTS } from "../utils/queries";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "../components/Footer"
 
 
 const Workout = () => {
@@ -32,10 +33,10 @@ const Workout = () => {
           <div className="searchTitle">Workouts</div>
           <div className="searchInfo">
             <div className="information">Create your own workouts</div>
-            <div className="video">Youtube video</div>
           </div>
         </div>
       </section>
+      <Footer />  
     </div>
   );
 

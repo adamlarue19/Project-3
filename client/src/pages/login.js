@@ -72,7 +72,7 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
                 <button
-                  className="btn btn-light"
+                  className="login-btn"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >

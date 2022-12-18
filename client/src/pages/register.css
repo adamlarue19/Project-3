@@ -40,4 +40,15 @@ body {
   height: 50px;
   margin-bottom: 3vh;
 }
-
+.sign-up-btn {
+  padding:10px 20px;
+  color: white;
+  background-color: var(--red);
+  border:none;
+  border-radius:8px;
+  margin:0px 15px;
+  font-size: 15px;
+}
+.sign-up-btn:hover {
+  color: black;
+}

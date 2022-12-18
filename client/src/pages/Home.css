@@ -89,6 +89,9 @@ code {
   margin-left: 6vh;
   margin-top: 3vh;
 }
+.startNowBtn:hover {
+  color: black;
+}
 section {
   margin-bottom: 10vh;
   background-color: rgb(156, 40, 40);

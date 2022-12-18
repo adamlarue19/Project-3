@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #030202
+  background-color: #030202;
 }
 .login-Container {
   display: block;
@@ -28,28 +28,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
- 
-.btn{
-  color: white;
-  background-color: red;
-  border-radius: 5px;
-  font-size: larger;
-  display: block;
-  margin: 10px auto;
-}
 .greeting {
   margin-right: 2vh;
   color: white;
   font-size: 20px;
 }
-
 input[type="text"],
 input[type="password"] {
   height: 50px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 input[type="submit"] {
   margin-top: 10px;
   cursor: pointer;
@@ -59,37 +47,31 @@ input[type="submit"] {
   color: #fff;
   padding: 10px 20px;
 }
-
 input[type="submit"]:hover {
   background: #6cf0c2;
 }
-
 .button-container {
   display: flex;
   justify-content: center;
 }
-
 .list-container {
   display: flex;
 }
-
 .error {
   color: red;
   font-size: 12px;
 }
-
 .title {
   font-size: 25px;
   margin-bottom: 20px;
 }
-
 .input-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin: 100px;
 }
-.loginForm{
+.loginForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,4 +86,16 @@ input[type="submit"]:hover {
   height: 50px;
   margin-top: 3vh;
   margin-bottom: 3vh;
+}
+.login-btn {
+  padding:10px 20px;
+  color: white;
+  background-color: var(--red);
+  border:none;
+  border-radius:8px;
+  margin:0px 15px;
+  font-size: 15px;
+}
+.login-btn:hover {
+  color: black;
 }
