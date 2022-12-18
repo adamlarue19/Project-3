@@ -3,6 +3,7 @@ import SearchForm from "./Test";
 import "./Workout.css";
 import Carousel from "../components/Excersise/index"
 import Workouts from "../components/Workouts/index"
+import Footer from "../components/Footer"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -29,6 +30,7 @@ const Workout = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </body>
   );
 

@@ -1,5 +1,5 @@
 html {
-  background-color: #030202;
+  background-color: rgb(156, 40, 40);
 }
 body {
   margin: 0;
@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #030202;
+  background-color: rgb(173, 44, 44);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@400;700&display=swap");
@@ -19,7 +19,7 @@ code {
 }
 
 .space {
-  background-color: #030202;
+  background-color: rgb(156, 40, 40);
 }
 
 * {
@@ -51,10 +51,12 @@ code {
   font-family: "Syne", sans-serif;
   max-width: 500px;
   line-height: 2;
+  font-size: 1.2em;
+  margin-bottom: 3vh;
 }
 .text-container > h1 {
   color: white;
-  font-size: 3.75em;
+  font-size: 3.2em;
   max-width: 700px;
   font-family: "Syne", sans-serif;
   margin: 10px 0px;
@@ -75,19 +77,36 @@ code {
 }
 .image-container > img {
   width: 100%;
+  border-radius: 20px;
+}
+.startNowBtn {
+  padding:15px 60px;
+  color: white;
+  background-color: var(--red);
+  border:none;
+  border-radius:8px;
+  font-size: 15px;
+  margin-left: 6vh;
+  margin-top: 3vh;
 }
 section {
-  background-color: #030202;
   margin-bottom: 10vh;
+  background-color: rgb(156, 40, 40);
 }
 .main-Container {
   display: flex;
   flex-direction: column;
   margin: 20px;
   align-items: center;
+  background-color: rgb(156, 40, 40);
+}
+.arrow {
+  margin: 3vh;
+  font-size: 110px;
 }
 .about-Container {
-color: white;
+  color: white;
+  background-color: rgb(156, 40, 40);
 }
 .howContainer {
   display: flex;
@@ -97,32 +116,18 @@ color: white;
 }
 .container1 {
   color: white;
-  border: white;
-  border-style: solid;
-  border-radius: 20px;
   height: 25vh;
   width: 25vh;
 }
-.container2 {
-  color: white;
-  border: white;
-  border-style: solid;
-  border-radius: 20px;
-  height: 25vh;
-  width: 25vh;
-}
-.container3 {
-  color: white;
-  border: white;
-  border-style: solid;
-  border-radius: 20px;
-  height: 25vh;
-  width: 25vh;
+.text2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 15%;
 }
 
 .searchContainer {
   color: white;
-  border: red;
+  border: white;
   border-width: 3px;
   border-style: solid;
   border-radius: 20px;
@@ -130,10 +135,13 @@ color: white;
   width: 120vh;
   margin-top: 10vh;
 }
-.searchMenu {
+.search-Menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
+}
+.dropdown-item {
+  background-color: #d43838;
 }
 .searchInfo {
   display: flex;
@@ -151,7 +159,7 @@ color: white;
 .video {
   margin: 5vh;
   margin-right: 8vh;
-  border: red;
+  border: white;
   border-width: 2px;
   border-style: solid;
   border-radius: 5px;
@@ -159,36 +167,50 @@ color: white;
 }
 .bmiExample {
   color: white;
-  border: white;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 20px;
-  height: 20vh;
-  width: 100vh;
+  height: auto;
+  width: 125vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  margin-right: 5vh;
 }
-.bmiImage {
+.image-Container {
+  margin: 3vh;
+  width: 50%;
+  max-width: 1000px;
+  min-width: 800px;
+  border-radius: 25px;
+}
+
+.bmiTextBox {
   margin: 5vh;
-  border: red;
+  border: white;
   border-width: 2px;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 25px;
+  width: 35vh;
   height: auto;
 }
 .bmiText {
-  margin: 5vh;
-  margin-right: 8vh;
-  border: red;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  height: auto;
+  margin: 2vh;
+}
+.bmiTextP {
+  font-size: 20px;
+  margin-top: 2vh;
 }
 /* Media Queries */
 @media screen and (max-width: 767px) {
   .text-container > h1 {
     font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-Container {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .searchContainer > div {
+    width: auto;
   }
 }

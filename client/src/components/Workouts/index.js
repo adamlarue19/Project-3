@@ -31,7 +31,6 @@ const WorkoutForm = () => {
             const { data } = await addWorkout({
                 variables: {
                     name,
-                    exercise: getP
                 },
             });
 

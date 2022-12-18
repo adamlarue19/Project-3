@@ -33,7 +33,7 @@ const Header = () => {
         <div className="button-container">
         {Auth.loggedIn() ? (
             <>
-              <span>Hey there, {Auth.getProfile().data.username}!</span>
+              <span className="greeting">Hi, {Auth.getProfile().data.username}!</span>
               <button className="sign-up-btn m-2" onClick={logout}>
                 Logout
               </button>
@@ -51,6 +51,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+
   )
 }
 

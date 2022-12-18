@@ -3,10 +3,6 @@ import axios from "axios";
 import React, { useState } from 'react';
 
 
- export const apiCall = (muscle) => {
-
-
-
  export const apiCall = async (muscle) => {
    // const options = {
    //   method: 'GET',
