@@ -1,28 +1,34 @@
 import React from "react";
 import SearchForm from "./Test";
 import "./Workout.css";
-import Carousel from "../components/Excersise/index"
-import Workouts from "../components/Workouts/index"
-import Footer from "../components/Footer"
-
+import { useQuery } from '@apollo/client';
+import ExerciseForm from "../components/Excersise/index"
+import WorkoutForm from "../components/WorkoutForm/index"
+import WorkoutList from "../components/WorkoutList/index"
+import { QUERY_WORKOUTS } from "../utils/queries";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 const Workout = () => {
+  const {loading, data } = useQuery(QUERY_WORKOUTS);
+  const workouts = data?.workouts || [];
 
   return (
-    <body className="body">
+    <div className="body">
       <section className="main-Container">
         <div className="excercise-Container">
           <div className="excerciseTitle">
-            <h2>Excercises</h2>
+            <h2>Add Workout</h2>
           </div>
-          <p className="pGitFit">Favorite your excercises</p>
-		  <Carousel />
+          <WorkoutForm />
         </div>
       </section>
       <section className="main-Container">
         <div className="workoutContainer">
-          <Workouts />
+          <WorkoutList 
+          workouts={workouts}
+          title="test"
+          />
           <div className="searchTitle">Workouts</div>
           <div className="searchInfo">
             <div className="information">Create your own workouts</div>
@@ -30,8 +36,7 @@ const Workout = () => {
           </div>
         </div>
       </section>
-      <Footer />
-    </body>
+    </div>
   );
 
 };

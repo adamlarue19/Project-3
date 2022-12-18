@@ -8,7 +8,6 @@ import image from "../images/main-image.png";
 
 const Home = () => {
   return (
-    <body>
     <div className="space">
       <section className="hero-section">
         <div className="hero-container">
@@ -34,7 +33,6 @@ const Home = () => {
       <Search />
       <Footer />
     </div>
-    </body>
   );
 };
 

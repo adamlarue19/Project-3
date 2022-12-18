@@ -9,6 +9,16 @@ export const QUERY_USER = gql`
     }
   }
 `;
+export const QUERY_EXERCISE =gql`
+query getExercise($exerciseId: ID!) {
+  exercise(exerciseId: $exerciseId) {
+    name
+    reps
+    sets
+    weight
+  }
+}
+`
 export const QUERY_WORKOUTS = gql`
 query getuserData {
   users {
@@ -25,6 +35,20 @@ query getuserData {
         sets
         weight
       }
+    }
+  }
+}
+`
+export const QUERY_WORKOUT = gql`
+query getWorkout($workoutId: ID!) {
+  workout(workoutId: $workoutId) {
+    _id
+    name
+    exercises {
+      name
+      reps
+      sets
+      weight
     }
   }
 }
