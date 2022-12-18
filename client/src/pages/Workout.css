@@ -65,3 +65,11 @@ section {
 .addWorkout-btn:hover {
   color: black;
 }
+/* WorkoutList CSS */
+.workoutTitle {
+  color: black;
+}
+.card {
+  width: 20%;
+
+}
