@@ -51,7 +51,7 @@ const SearchForm = () => {
 
 
 <div>{
-results?.map((muscle) => <li>json.stringify{muscle.muscle}</li>)
+// results?.map((muscle) => <li>json.stringify{muscle.muscle}</li>)
 
 }</div>
 
@@ -65,15 +65,7 @@ results?.map((muscle) => <li>json.stringify{muscle.muscle}</li>)
               </form>
 <div>{
 results?.map((data, i) => <li key={i}>{data.name}</li>)
-
-
-/*{results&&results?.map((data) => {
-    <div>
-       <li><strong>Name:</strong> {data.name}</li>
-      <h3>THIS IS TEST SEE IF THIS SHOWS</h3>
-    </div>
-  
-})} */}</div>
+}</div>
 
           </div>
         </div>

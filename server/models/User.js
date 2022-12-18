@@ -22,9 +22,9 @@ const userSchema = new Schema({
   workouts: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'Workout'
+      ref: 'Workout',
     }
-  ]
+  ],
 });
 
 userSchema.pre('save', async function (next) {

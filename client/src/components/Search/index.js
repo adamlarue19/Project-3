@@ -1,23 +1,38 @@
 import React from "react";
 import { useState } from "react";
+import {apiCall} from "../../utils/axiosApi"
 
 import image from "../../images/BMI.webp"
 
 
 const Search = () => {
-  const [product, setProduct] = useState({
-    productId: 0,
-    productName: "",
-    productCategory: "",
-    productPrice: 0,
-  });
+  const [results, setResults] = useState([]);
+  const [formState, setFormState] = useState({ muscle: ''});
 
-  const save = () => {
-    // This would be call on onClick of Save button
-    console.log(`Values from product is: `);
-    console.log(
-      `ProductId: ${product.productId} ProductName: ${product.productName} Product Category: ${product.productCategory} ProductPrice: ${product.productPrice}`
-    );
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+  // submit form
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    console.log(formState+"line 22");
+    console.log(formState.muscle)
+    const data = await apiCall(formState.muscle);
+
+    console.log(data);
+    setResults(data.data)
+
+// data right here 
+    // clear form values
+    setFormState({
+      muscle: ''
+    });
   };
   return (
     <div className="space">
@@ -46,14 +61,19 @@ const Search = () => {
       <div className="main-Container">
         <div className="searchContainer">
           <div className="search-Menu">
-            <div className="form-group">
+            <form className="form-group"
+            value={formState.muscle}
+            onChange={handleChange}
+            onSubmit={handleFormSubmit} >
               <label htmlFor="">Pick Muscle Group</label>
+              {/* button for submit and API*/}
+
               <select
-                className="sign-up-btn"
-                value={product.productCategory}
-                onChange={(evt) =>
-                  setProduct({ ...product, productCategory: evt.target.value })
-                }
+                className="form-input"
+                name="muscle"
+                value={formState.muscle}
+                onChange={ handleChange}
+              
               >
                 <option >Abdominals</option>
                 <option >Abductors</option>
@@ -72,13 +92,14 @@ const Search = () => {
                 <option >Traps</option>
                 <option >Triceps</option>
               </select>
+              
               <div className="form-group">
               <label htmlFor="">Product Category</label>
               <select
                 className="sign-up-btn"
-                value={product.productCategory}
-                onChange={(evt) =>
-                  setProduct({ ...product, productCategory: evt.target.value })
+                // value={product.productCategory}
+                onChange={(event) =>
+                  handleChange
                 }
               >
                 <option >Beginner</option>
@@ -86,10 +107,20 @@ const Search = () => {
                 <option >Extreme</option>
               </select>
             </div>
-          </div>
+            <button
+                  className="btn btn-block btn-info"
+                  style={{ cursor: 'pointer' }}
+                  type="submit"
+                >
+                  Submit
+                </button>
+  
+          </form>
           </div>
           <div className="searchInfo">
-            <div className="information">
+            <div className="information" >{
+results?.map((data, i) => <li key={i}>{data.name}</li>)
+}
               This is going to be where the information displays
             </div>
             <div className="video">Youtube video</div>
