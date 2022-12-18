@@ -1,6 +1,7 @@
 import React from "react";
 import SearchForm from "./Test";
 import "./Workout.css";
+import { useQuery } from '@apollo/client';
 import ExerciseForm from "../components/Excersise/index"
 import WorkoutForm from "../components/WorkoutForm/index"
 import WorkoutList from "../components/WorkoutList/index"
@@ -9,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 const Workout = () => {
-  const { data } = useQuery(QUERY_WORKOUTS);
+  const {loading, data } = useQuery(QUERY_WORKOUTS);
   const workouts = data?.workouts || [];
 
   return (

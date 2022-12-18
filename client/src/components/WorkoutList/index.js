@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WorkoutList = ({ workouts, title }) => {
     if (!workouts.length) {
-      return <h3>No workoutss Yet</h3>;
+      return <h3>No workouts Yet</h3>;
     }
   
     return (
@@ -12,14 +12,8 @@ const WorkoutList = ({ workouts, title }) => {
         {workouts &&
           workouts.map((workouts) => (
             <div key={workouts._id} className="card mb-3">
-              <h4 className="card-header bg-primary text-light p-2 m-0">
-                {workouts.name} <br />
-                <span style={{ fontSize: '1rem' }}>
-                  had this workouts on {workouts.createdAt}
-                </span>
-              </h4>
               <div className="card-body bg-light p-2">
-                <p>{workouts.workoutsText}</p>
+                <p>{workouts.name}</p>
               </div>
               <Link
                 className="btn btn-primary btn-block btn-squared"
