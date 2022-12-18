@@ -84,7 +84,6 @@ const Search = () => {
                 <option >Beginner</option>
                 <option >Intermetiate</option>
                 <option >Extreme</option>
-                <option >Mobile</option>
               </select>
             </div>
           </div>
