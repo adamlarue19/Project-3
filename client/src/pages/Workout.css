@@ -32,7 +32,7 @@ section {
   border-width: 5px;
   border-style: solid;
   border-radius: 20px;
-  height: 25vh;
+  height: auto;
   width: 100vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -48,10 +48,13 @@ section {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
+.excerciseTitle {
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
 .addWorkout {
-  display: block;
-  justify-items: center;
-  width: 80%;
+  width: 350%;
+  margin-bottom: 4vh;
 }
 .addWorkout-btn {
   padding:10px 20px;
@@ -61,17 +64,52 @@ section {
   border-radius:8px;
   margin:0px 15px;
   font-size: 15px;
+  margin-bottom: 3vh;
+  width: 10vh;
 }
 .addWorkout-btn:hover {
   color: black;
+}
+.workoutF {
+  display: flex;
+  justify-content: center;
 }
 /* WorkoutList CSS */
 .workoutTitle {
   color: black;
 }
-.card {
-  width: 20%;
-
+.card-style {
+  width: 22%;
+  height: 12vh;
+  border-color: black;
+  border-style: solid;
+  border-radius: 15px;
+}
+.card-layout {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 7vh;
+  margin-right: 8vh;
+}
 .workoutTitle {
   color:#030202
+}
+.seeWorkout-btn {
+  padding:10px 20px;
+  color: white;
+  background-color: var(--red);
+  border:none;
+  border-radius:8px;
+  font-size: 15px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.seeWorkout-btn:hover {
+  color: black;
+}
+.card-body-style {
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
 }
