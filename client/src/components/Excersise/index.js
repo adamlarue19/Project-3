@@ -8,8 +8,8 @@ const ExerciseForm = () => {
   const [formState, setFormState] = useState({
     name: '',
     weight: '',
-    reps:'5',
-    sets: '6',
+    reps:'',
+    sets: '',
   });
   console.log(formState)
   const [addExercise, { error }] = useMutation(ADD_EXERCISE, {
@@ -33,7 +33,7 @@ const handleFormSubmit = async (event) => {
 
   try {
     const { data } = await addExercise({
-      variables: {workoutId:"63989f961ff339c1f59edf59", name:formState.name, weight:+formState.weight, reps:+formState.reps, sets:+formState.sets },
+      variables: {workoutId:"639e3fa4e7a699dcc586798b", name:formState.name, weight:+formState.weight, reps:+formState.reps, sets:+formState.sets },
     });
 console.log(data)
     // window.location.reload();
@@ -59,20 +59,40 @@ return (
         onSubmit={handleFormSubmit}
       >
         <div className="col-12">
-          <textarea
+          <input
             name="name"
-            placeholder="enter name"
+            placeholder="Add Exercise Name"
             value={formState.name}
             className="form-input w-100"
             onChange={handleChange}
-          ></textarea>
+          ></input>
         </div>
         <div className="col-12 col-lg-9">
           <input
           type="number"
             name="weight"
-            placeholder="Add your weight"
+            placeholder="Add Weight"
             value={formState.weight}
+            className="form-input w-100"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="col-12 col-lg-9">
+          <input
+          type="number"
+            name="reps"
+            placeholder="Add Reps"
+            value={formState.reps}
+            className="form-input w-100"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="col-12 col-lg-9">
+          <input
+          type="number"
+            name="sets"
+            placeholder="Add Sets"
+            value={formState.sets}
             className="form-input w-100"
             onChange={handleChange}
           />
@@ -80,7 +100,7 @@ return (
 
         <div className="col-12 col-lg-3">
           <button className="btn btn-primary btn-block py-3" type="submit">
-            Add Thought
+            Add Exercise
           </button>
         </div>
         {error && (
@@ -93,57 +113,5 @@ return (
 )
 };
 
-
-
-
-
-
-// const Carousel = () => {
-//     return (
-//         <div className="eCarousel">
-//             <div
-//               id="carouselExampleControls"
-//               class="carousel slide"
-//               data-bs-ride="carousel"
-//             >
-//               <div class="carousel-inner">
-//                 <div class="carousel-item active">
-//                   <img src="..." class="d-block w-100" alt="..." />
-//                 </div>
-//                 <div class="carousel-item">
-//                   <img src="..." class="d-block w-100" alt="..." />
-//                 </div>
-//                 <div class="carousel-item">
-//                   <img src="..." class="d-block w-100" alt="..." />
-//                 </div>
-//               </div>
-//               <button
-//                 class="carousel-control-prev"
-//                 type="button"
-//                 data-bs-target="#carouselExampleControls"
-//                 data-bs-slide="prev"
-//               >
-//                 <span
-//                   class="carousel-control-prev-icon"
-//                   aria-hidden="true"
-//                 ></span>
-//                 <span class="visually-hidden">Previous</span>
-//               </button>
-//               <button
-//                 class="carousel-control-next"
-//                 type="button"
-//                 data-bs-target="#carouselExampleControls"
-//                 data-bs-slide="next"
-//               >
-//                 <span
-//                   class="carousel-control-next-icon"
-//                   aria-hidden="true"
-//                 ></span>
-//                 <span class="visually-hidden">Next</span>
-//               </button>
-//             </div>
-//           </div>
-//     )
-// }
 
 export default ExerciseForm;
