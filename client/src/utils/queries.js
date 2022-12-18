@@ -20,21 +20,15 @@ query getExercise($exerciseId: ID!) {
 }
 `
 export const QUERY_WORKOUTS = gql`
-query getuserData {
-  users {
+query Query {
+  workouts {
     _id
-    email
-    password
-    username
-    workouts {
-      _id
+    name
+    exercises {
       name
-      exercises {
-        name
-        reps
-        sets
-        weight
-      }
+      reps
+      sets
+      weight
     }
   }
 }

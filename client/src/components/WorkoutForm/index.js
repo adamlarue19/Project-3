@@ -56,7 +56,7 @@ const WorkoutForm = () => {
         className="flex-row justify-center justify-space-between-md align-center"
         onSubmit={handleFormSubmit}
       >
-        <div className="col-12">
+        <div className="addWorkout">
           <input
             name="name"
             placeholder="Add Workout Name"
@@ -65,19 +65,10 @@ const WorkoutForm = () => {
             onChange={handleChange}
           ></input>
         </div>
-        <div className="col-12 col-lg-9">
-          <input
-            name="exercises"
-            placeholder="Add Exercise"
-            value={formState.exercises}
-            className="form-input w-100"
-            onChange={handleChange}
-          />
-        </div>
        
 
         <div className="col-12 col-lg-3">
-          <button className="btn btn-primary btn-block py-3" type="submit">
+          <button className="addWorkout-btn" type="submit">
             Add Exercises
           </button>
         </div>
