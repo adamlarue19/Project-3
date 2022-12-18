@@ -10,7 +10,7 @@ export const QUERY_USER = gql`
   }
 `;
 export const QUERY_EXERCISE =gql`
-query Query($exerciseId: ID!) {
+query getExercise($exerciseId: ID!) {
   exercise(exerciseId: $exerciseId) {
     name
     reps
@@ -38,4 +38,19 @@ query getuserData {
     }
   }
 }
+`
+export const QUERY_WORKOUT = gql`
+query getWorkout($workoutId: ID!) {
+  workout(workoutId: $workoutId) {
+    _id
+    name
+    exercises {
+      name
+      reps
+      sets
+      weight
+    }
+  }
+}
+
 `
