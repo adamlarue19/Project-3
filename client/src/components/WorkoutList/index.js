@@ -13,7 +13,7 @@ const WorkoutList = ({ workouts, title }) => {
           workouts.map((workouts) => (
             <div key={workouts._id} className="card mb-3">
               <div className="card-body bg-light p-2">
-                <p>{workouts.name}</p>
+                <p className='workoutTitle'>{workouts.name}</p>
               </div>
               <Link
                 className="btn btn-primary btn-block btn-squared"
