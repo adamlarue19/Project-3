@@ -1,78 +1,92 @@
 import React from "react";
+import { useState } from "react";
 
-const Search = ({ search }) => {
+import image from "../../images/BMI.webp"
+
+
+const Search = () => {
+  const [product, setProduct] = useState({
+    productId: 0,
+    productName: "",
+    productCategory: "",
+    productPrice: 0,
+  });
+
+  const save = () => {
+    // This would be call on onClick of Save button
+    console.log(`Values from product is: `);
+    console.log(
+      `ProductId: ${product.productId} ProductName: ${product.productName} Product Category: ${product.productCategory} ProductPrice: ${product.productPrice}`
+    );
+  };
   return (
-    <body className="space">
+    <div className="space">
       <div className="main-Container">
         <div className="about-Container">
           <div className="headingGitFit">
             <h2>How GitFit Works</h2>
           </div>
           <div className="howContainer">
-            <div className="container1">container 1</div>
-            <div className="container2">container 2</div>
-            <div className="container3">container 3</div>
+            <div className="container1">
+              <div className="text2">Pick your muscle </div>
+            </div>
+            <div className="arrow">➪</div>
+            <div className="container1">
+              <div className="text2">Chose your favorite excercises</div>
+            </div>
+            <div className="arrow">➪</div>
+            <div className="container1">
+              <div className="text2">
+                Create workouts with excercises of your choosing
+              </div>
+            </div>
           </div>
         </div>
-        <p className="pGitFit">This is the about Git-Fit section</p>
       </div>
       <div className="main-Container">
         <div className="searchContainer">
-          <div className="searchMenu">
-            <div className="dropdown">
-              <button
-                className="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+          <div className="search-Menu">
+            <div className="form-group">
+              <label htmlFor="">Pick Muscle Group</label>
+              <select
+                className="sign-up-btn"
+                value={product.productCategory}
+                onChange={(evt) =>
+                  setProduct({ ...product, productCategory: evt.target.value })
+                }
               >
-                Muscle
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <button className="dropdown-item" type="button">
-                    Action
-                  </button>
-                </li>
-                <li>
-                  <button className="dropdown-item" type="button">
-                    Another action
-                  </button>
-                </li>
-                <li>
-                  <button className="dropdown-item" type="button">
-                    Something else here
-                  </button>
-                </li>
-              </ul>
-              <div className="dropdown">
-                <button
-                  className="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Difficulty
-                </button>
-                <ul className="dropdown-menu">
-                  <li>
-                    <button className="dropdown-item" type="button">
-                      Action
-                    </button>
-                  </li>
-                  <li>
-                    <button className="dropdown-item" type="button">
-                      Another action
-                    </button>
-                  </li>
-                  <li>
-                    <button className="dropdown-item" type="button">
-                      Something else here
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <option >Abdominals</option>
+                <option >Abductors</option>
+                <option >Adductors</option>
+                <option >Biceps</option>
+                <option >Calves</option>
+                <option >Chest</option>
+                <option >Forearms</option>
+                <option >Glutes</option>
+                <option >Hamstrings</option>
+                <option >Lats</option>
+                <option >Lowerback</option>
+                <option >Middleback</option>
+                <option >Neck</option>
+                <option >Quadriceps</option>
+                <option >Traps</option>
+                <option >Triceps</option>
+              </select>
+              <div className="form-group">
+              <label htmlFor="">Product Category</label>
+              <select
+                className="sign-up-btn"
+                value={product.productCategory}
+                onChange={(evt) =>
+                  setProduct({ ...product, productCategory: evt.target.value })
+                }
+              >
+                <option >Beginner</option>
+                <option >Intermetiate</option>
+                <option >Extreme</option>
+              </select>
             </div>
+          </div>
           </div>
           <div className="searchInfo">
             <div className="information">
@@ -83,16 +97,24 @@ const Search = ({ search }) => {
         </div>
       </div>
 
+
       <section className="main-Container">
         <div className="bmiExample">
-        <div className="image-container">
+          <div>
             {/* Imported image */}
-            {/* <img src={image}></img> */}
+            <img className="image-Container" src={image}></img>
           </div>
-          <div className="bmiText">This is the text for the bmi image</div>
+          <div className="bmiTextBox">
+            <div className="bmiText">
+            <h1>Body Mass Index (BMI)</h1>
+            <p className="bmiTextP">A person's body mass index (BMI) is an estimate of their body fat based on their height and weight.</p>
+            <p className="bmiTextP"> Doctors use BMI to assess an adult's health status and potential health risks. People with higher BMIs are more likely to develop chronic diseases like heart disease and diabetes.</p>
+            </div>
+          </div>
         </div>
       </section>
-    </body>
+
+</div>
   );
 };
 

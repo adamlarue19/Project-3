@@ -12,6 +12,7 @@ header{
 }
 .header-container{
     width:85%;
+    height: 8vh;
     margin: 0 auto;
     display:flex;
     align-items: center;
@@ -21,7 +22,7 @@ header{
 .brand-logo > h1{
     color:white;
     font-weight: 700;
-    font-size:2.45em;
+    font-size:4.5em;
 }
 .orange-red{
     color:var(--red)
@@ -29,6 +30,7 @@ header{
 nav > a{
     margin:0px 15px;
     color:white;
+    font-size: 20px;
 }
 .button-container{
     display:flex;
@@ -37,6 +39,7 @@ nav > a{
 .log-in-btn{
     color:white;
     margin:0px 15px;
+    font-size: 15px;
 }
 .sign-up-btn {
     padding:10px 20px;
@@ -45,6 +48,7 @@ nav > a{
     border:none;
     border-radius:8px;
     margin:0px 15px;
+    font-size: 15px;
 }
 #menu{
     display:none;

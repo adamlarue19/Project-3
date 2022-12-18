@@ -13,7 +13,6 @@ import Home from "./pages/home";
 import Workout from "./pages/Workout";
 import Login from "./pages/login";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Test from "./pages/Test";
 import Signup from "./pages/register";
 
@@ -62,7 +61,6 @@ function App() {
             </Routes>
             {/* <p>Fill in homepage info and content here</p> */}
           </div>
-          <Footer />
         </div>
       </Router>
     </ApolloProvider>
