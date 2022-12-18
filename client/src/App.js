@@ -15,6 +15,7 @@ import Login from "./pages/login";
 import Header from "./components/Header";
 import Test from "./pages/Test";
 import Signup from "./pages/register";
+import Exercise from "./pages/Exercise";
 
 import "./App.css";
 
@@ -57,6 +58,9 @@ function App() {
               <Route path="/register" element={<Signup />} />
 
               <Route path="/workouts" element={<Workout />} />
+
+              <Route path="/workouts/:workoutId" element={<Exercise />} />
+              
               <Route path="/test" element={<Test />} />
             </Routes>
             {/* <p>Fill in homepage info and content here</p> */}
