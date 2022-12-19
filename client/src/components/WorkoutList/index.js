@@ -7,19 +7,20 @@ const WorkoutList = ({ workouts, title }) => {
     }
   
     return (
-      <div>
+      <div className='card-layout'>
         <h3>{title}</h3>
         {workouts &&
           workouts.map((workouts) => (
-            <div key={workouts._id} className="card mb-3">
-              <div className="card-body bg-light p-2">
+            
+            <div key={workouts._id} className="card-style mb-3">
+              <div className="card-body-style p-2">
                 <p className='workoutTitle'>{workouts.name}</p>
               </div>
               <Link
-                className="btn btn-primary btn-block btn-squared"
+                className="seeWorkout-btn"
                 to={`/workouts/${workouts._id}`}
               >
-                Join the discussion on this workouts.
+                See Your Workout
               </Link>
             </div>
           ))}

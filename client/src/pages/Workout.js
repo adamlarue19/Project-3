@@ -21,14 +21,15 @@ const Workout = () => {
           <div className="excerciseTitle">
             <h2>Add Workout</h2>
           </div>
+          <div className="workoutF">
           <WorkoutForm />
+          </div>
         </div>
       </section>
       <section className="main-Container">
         <div className="workoutContainer">
           <WorkoutList 
           workouts={workouts}
-          title="test"
           />
           <div className="searchTitle">Workouts</div>
           <div className="searchInfo">
