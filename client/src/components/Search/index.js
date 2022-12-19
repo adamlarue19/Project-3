@@ -3,6 +3,9 @@ import { useState } from "react";
 import {apiCall} from "../../utils/axiosApi"
 
 import image from "../../images/BMI.webp"
+import muscle from "../../images/muscle.png"
+import pushUp from "../../images/pushup.png"
+import lifting from "../../images/lifting.png"
 
 
 const Search = () => {
@@ -43,22 +46,25 @@ const Search = () => {
           </div>
           <div className="howContainer">
             <div className="container1">
-              <div className="text2">Pick your muscle </div>
+            <img className="i" src={muscle}></img>
+              <div className="text2">Pick your muscle to learn exercises for </div>
             </div>
             <div className="arrow">➪</div>
             <div className="container1">
-              <div className="text2">Chose your favorite excercises</div>
+            <img className="i" src={pushUp}></img>
+              <div className="text2">Chose your favorite excercises from the search</div>
             </div>
             <div className="arrow">➪</div>
             <div className="container1">
+            <img className="i" src={lifting}></img>
               <div className="text2">
-                Create workouts with excercises of your choosing
+                Create workouts and add excercises of your choosing
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="main-Container">
+      <div id="apicontainer" className="main-Container">
         <div className="searchContainer">
           <div className="search-Menu">
             <form className="form-group"

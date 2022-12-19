@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(156, 40, 40);
+  background-color: rgb(170, 169, 169);
 }
 body {
   margin: 0;
@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(173, 44, 44);
+  background-color: rgb(170, 169, 169);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@400;700&display=swap");
@@ -19,7 +19,7 @@ code {
 }
 
 .space {
-  background-color: rgb(156, 40, 40);
+  background-color: rgb(170, 169, 169);
 }
 
 * {
@@ -27,6 +27,7 @@ code {
   padding: 0;
   --red: #d43838;
   --green: #38d467;
+  --backround: rgb(156, 40, 40);
 }
 .hero-section {
   background-color: #030202;
@@ -80,9 +81,10 @@ code {
   border-radius: 20px;
 }
 .startNowBtn {
+  text-decoration: none;
   padding:15px 60px;
   color: white;
-  background-color: var(--red);
+  background-color: rgb(170, 169, 169);
   border:none;
   border-radius:8px;
   font-size: 15px;
@@ -91,25 +93,26 @@ code {
 }
 .startNowBtn:hover {
   color: black;
+  background-color:rgb(156, 40, 40)
 }
 section {
   margin-bottom: 10vh;
-  background-color: rgb(156, 40, 40);
+  background-color: rgb(170, 169, 169);
 }
 .main-Container {
   display: flex;
   flex-direction: column;
-  margin: 20px;
   align-items: center;
-  background-color: rgb(156, 40, 40);
+  background-color: rgb(170, 169, 169);
 }
 .arrow {
+  color: black;
   margin: 3vh;
   font-size: 110px;
 }
 .about-Container {
   color: white;
-  background-color: rgb(156, 40, 40);
+  background-color: rgb(170, 169, 169);
 }
 .howContainer {
   display: flex;
@@ -118,13 +121,15 @@ section {
   justify-content: space-evenly;
 }
 .headingGitFit > h2 {
+  color: #030202;
   font-size: 40px;
   font-weight: 600;
 }
 .container1 {
-  color: white;
+  color: rgb(14, 9, 9);
   height: 25vh;
-  width: 25vh;
+  width: 35vh;
+  margin-bottom: 10%;
 }
 .text2 {
   font-size: 35px;
@@ -143,6 +148,10 @@ section {
   margin-top: 4vh;
   margin-bottom: 6vh;
 }
+#apicontainer {
+  background-color: #030202;
+}
+
 .form-group {
   display: flex;
   flex-direction: row;

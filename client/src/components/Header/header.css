@@ -9,8 +9,10 @@
 header{
     background-color: #030202;
     font-family: 'Syne', sans-serif;
+    text-decoration: none;
 }
 .header-container{
+    text-decoration: none;
     width:85%;
     height: 8vh;
     margin: 0 auto;
@@ -27,37 +29,45 @@ header{
 .orange-red{
     color:var(--red)
 }
+nav {
+    text-decoration: none;
+}
 nav > a{
+    text-decoration: none;
     margin:0px 15px;
     color:white;
     font-size: 20px;
 }
 nav > a:hover {
-    color: #d43838;
+    text-decoration: none;
+    color: var(--red);
 }
 .button-container{
     display:flex;
     align-items: center;
 }
 .log-in-btn{
+    text-decoration: none;
     color:white;
     margin:0px 15px;
     font-size: 15px;
 }
 .log-in-btn:hover {
-    color: #d43838;
+    color: var(--red);
 }
 .sign-up-btn {
+    text-decoration: none;
     padding:10px 20px;
     color: white;
-    background-color: var(--red);
+    background-color: rgb(170, 169, 169);
     border:none;
     border-radius:8px;
     margin:0px 15px;
     font-size: 15px;
 }
 .sign-up-btn:hover {
-    color: black;
+    color: var(--red);
+    background-color: var(--red)
 }
 #menu{
     display:none;

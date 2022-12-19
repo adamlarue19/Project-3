@@ -43,7 +43,7 @@ body {
 .sign-up-btn {
   padding:10px 20px;
   color: white;
-  background-color: var(--red);
+  background-color: rgb(170, 169, 169);
   border:none;
   border-radius:8px;
   margin:0px 15px;
