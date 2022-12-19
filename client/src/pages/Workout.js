@@ -28,13 +28,10 @@ const Workout = () => {
       </section>
       <section className="main-Container">
         <div className="workoutContainer">
+          <div className="searchTitle">Workouts</div>
           <WorkoutList 
           workouts={workouts}
           />
-          <div className="searchTitle">Workouts</div>
-          <div className="searchInfo">
-            <div className="information">Create your own workouts</div>
-          </div>
         </div>
       </section>
       <Footer />  
