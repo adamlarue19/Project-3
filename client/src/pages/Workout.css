@@ -14,7 +14,7 @@ body {
   background-color: rgb(156, 40, 40);
 }
 .body {
-  background-color: rgb(156, 40, 40);
+  background-color: rgb(170, 169, 169);
 }
 .main-Container {
   display: flex;
@@ -52,6 +52,11 @@ section {
   margin-top: 3vh;
   margin-bottom: 5vh;
 }
+.workoutsTitle {
+  margin-top: 3vh;
+  font-size: 30px;
+  font-weight: 600;
+}
 .addWorkoutSection {
   display: flex;
 
@@ -82,6 +87,8 @@ section {
 /* WorkoutList CSS */
 .workoutTitle {
   color: black;
+  font-size: larger;
+  font-weight: 600;
 }
 .card-style {
   width: 22%;

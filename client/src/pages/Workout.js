@@ -28,7 +28,7 @@ const Workout = () => {
       </section>
       <section className="main-Container">
         <div className="workoutContainer">
-          <div className="searchTitle">Workouts</div>
+          <div className="workoutsTitle">Workouts</div>
           <WorkoutList 
           workouts={workouts}
           />
