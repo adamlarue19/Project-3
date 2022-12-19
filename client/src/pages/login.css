@@ -5,17 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #030202;
+  background-color: rgb(170, 169, 169);
 }
 .login-Container {
   display: block;
   color: white;
-  border-color: white;
+  border-color:  rgb(170, 169, 169);
   border-style: solid;
-  border-width: 5px;
+  border-radius: 45px;
+  border-width: 1px;
   width: 50vh;
   height: auto;
   margin-top: 15vh;
+  background-color: #030202;
 }
 .loginTitle {
   color: white;
@@ -32,6 +34,9 @@ body {
   margin-right: 2vh;
   color: white;
   font-size: 20px;
+}
+input {
+  border-radius: 10px;
 }
 input[type="text"],
 input[type="password"] {
@@ -90,12 +95,14 @@ input[type="submit"]:hover {
 .login-btn {
   padding:10px 20px;
   color: white;
-  background-color: var(--red);
+  background-color: rgb(170, 169, 169);
   border:none;
   border-radius:8px;
   margin:0px 15px;
   font-size: 15px;
+  margin-bottom: 2vh;
 }
 .login-btn:hover {
   color: black;
+  background-color: #d43838;
 }

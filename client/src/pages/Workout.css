@@ -36,6 +36,7 @@ section {
   width: 80vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  background-color: #030202;
 }
 .workoutContainer {
   color: white;
@@ -47,19 +48,22 @@ section {
   width: 120vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  background-color: #030202;
 }
 .excerciseTitle {
   margin-top: 3vh;
   margin-bottom: 5vh;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 .workoutsTitle {
   margin-top: 3vh;
   font-size: 30px;
   font-weight: 600;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 .addWorkoutSection {
   display: flex;
-
 }
 .addWorkout {
   margin-bottom: 4vh;
@@ -69,7 +73,7 @@ section {
 .addWorkout-btn {
   padding: 10px 20px;
   color: white;
-  background-color: var(--red);
+  background-color: rgb(170, 169, 169);
   border: none;
   border-radius: 8px;
   margin: 0px 15px;
@@ -79,6 +83,7 @@ section {
 }
 .addWorkout-btn:hover {
   color: black;
+  background-color: #d43838;
 }
 .workoutF {
   display: flex;
@@ -89,11 +94,12 @@ section {
   color: black;
   font-size: larger;
   font-weight: 600;
+
 }
 .card-style {
   width: 22%;
   height: 12vh;
-  border-color: black;
+  border-color: rgb(170, 169, 169);
   border-style: solid;
   border-radius: 15px;
 }
@@ -106,13 +112,13 @@ section {
   margin-right: 8vh;
 }
 .workoutTitle {
-  color: black;
+  color: rgb(255, 255, 255);
   height: 3vh;
 }
 .seeWorkout-btn {
   padding: 10px 20px;
   color: white;
-  background-color: var(--red);
+  background-color: rgb(170, 169, 169);
   border: none;
   border-radius: 8px;
   font-size: 15px;
@@ -122,14 +128,15 @@ section {
 }
 .seeWorkout-btn:hover {
   color: black;
+  background-color: #d43838;
 }
 .card-body-style {
   margin-top: 1vh;
   margin-bottom: 1.5vh;
 }
-.excerciseSearch {
-  text-align: center;
-  margin-bottom: 1vh;
+.excerciseBar{
+  margin-bottom: 1.5vh;
+  
 }
 .addSectionName {
   display: flex;
@@ -138,12 +145,19 @@ section {
   align-items: center;
   margin-left: 20vh;
 }
+.addSectionName input {
+  text-align: center;
+}
 .addSection {
   display: flex;
   flex-direction: column;
   width: 30%;
   align-items: center;
   margin-left: 20vh;
+}
+.excerciseBtnSection {
+  display: flex;
+  justify-content: center;
 }
 .addEcercise-btn {
   padding: 10px 20px;
@@ -155,7 +169,12 @@ section {
   margin-top: 2vh;
   margin-bottom: 2vh;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 .addEcercise-btn:hover {
   color: #030202;
+}
+.noExcercises {
+  margin-bottom: 3vh;
 }

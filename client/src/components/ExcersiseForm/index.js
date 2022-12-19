@@ -63,7 +63,7 @@ const ExerciseForm = () => {
         onSubmit={handleFormSubmit}
       >
         <div className="addSectionName">
-          <div className="excerciseSearch col-12">
+          <div className="excerciseBar col-12">
             <input
               name="name"
               placeholder="Add Exercise Name"
@@ -72,7 +72,7 @@ const ExerciseForm = () => {
               onChange={handleChange}
             ></input>
           </div>
-          <div className="excerciseSearch col-12 col-lg-9">
+          <div className="excerciseBar col-12 col-lg-9">
             <input
               type="number"
               name="weight"
@@ -82,7 +82,7 @@ const ExerciseForm = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="excerciseSearch col-12 col-lg-9">
+          <div className="excerciseBar col-12 col-lg-9">
             <input
               type="number"
               name="reps"
@@ -92,7 +92,7 @@ const ExerciseForm = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="excerciseSearch col-12 col-lg-9">
+          <div className="excerciseBar col-12 col-lg-9">
             <input
               type="number"
               name="sets"
@@ -103,7 +103,7 @@ const ExerciseForm = () => {
             />
           </div>
         </div>
-        <div className="col-12 col-lg-3">
+        <div className="excerciseBtnSection">
           <button className="addEcercise-btn py-3" type="submit">
             Add Exercise
           </button>

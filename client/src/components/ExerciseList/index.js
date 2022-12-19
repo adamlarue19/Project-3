@@ -3,8 +3,10 @@ import React from 'react';
 
 const ExerciseList = ({ exercises, title }) => {
     if (!exercises.length) {
-      return <h3>No exercises Yet</h3>;
+
+      return <h3 className='noExcercises'>No exercises Yet</h3>;
       console.log(exercises)
+
     }
     console.log(exercises)
     return (
