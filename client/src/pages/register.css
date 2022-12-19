@@ -16,6 +16,7 @@ body {
   width: 50vh;
   height: auto;
   margin-top: 15vh;
+  background-color: #030202;
 }
 .main-Container {
   display: flex;
@@ -40,10 +41,10 @@ body {
   height: 50px;
   margin-bottom: 3vh;
 }
-.sign-up-btn {
+.signup-btn {
   padding:10px 20px;
   color: white;
-  background-color: rgb(170, 169, 169);
+  background-color: #d43838;
   border:none;
   border-radius:8px;
   margin:0px 15px;

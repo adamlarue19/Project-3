@@ -66,12 +66,14 @@ const Search = () => {
       </div>
       <div id="apicontainer" className="main-Container">
         <div className="searchContainer">
+          <label htmlFor="">Pick Muscle Group</label>
           <div className="search-Menu">
+            
             <form className="form-group"
             value={formState.muscle}
             onChange={handleChange}
             onSubmit={handleFormSubmit} >
-              <label htmlFor="">Pick Muscle Group</label>
+              
               {/* button for submit and API*/}
 
               <select
@@ -98,21 +100,7 @@ const Search = () => {
                 <option >Traps</option>
                 <option >Triceps</option>
               </select>
-              
-              <div className="form-group">
-              <label htmlFor="">Product Category</label>
-              <select
-                className="sign-up-btn"
-                // value={product.productCategory}
-                onChange={(event) =>
-                  handleChange
-                }
-              >
-                <option >Beginner</option>
-                <option >Intermetiate</option>
-                <option >Extreme</option>
-              </select>
-            </div>
+      
             <button
                   className="btn btn-block btn-info"
                   style={{ cursor: 'pointer' }}
