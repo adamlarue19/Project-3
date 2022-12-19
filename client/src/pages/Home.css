@@ -164,16 +164,17 @@ section {
 .dropdown-item {
   background-color: #d43838;
 }
+.searchTitle{
+  font-size: 35px;
+ 
+}
 .searchInfo {
-  display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
 .information {
+  font-size: 30px;
   margin: 5vh;
-  border: white;
-  border-width: 2px;
-  border-style: solid;
   border-radius: 5px;
   height: auto;
 }
@@ -197,6 +198,7 @@ section {
 }
 .image-Container {
   margin: 3vh;
+  margin-top: 100px;
   width: 50%;
   max-width: 1000px;
   min-width: 800px;
@@ -204,10 +206,8 @@ section {
 }
 
 .bmiTextBox {
+  color: white;
   margin: 5vh;
-  border: white;
-  border-width: 2px;
-  border-style: solid;
   border-radius: 25px;
   width: 35vh;
   height: auto;
