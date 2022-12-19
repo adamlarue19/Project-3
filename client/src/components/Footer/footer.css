@@ -1,7 +1,17 @@
 footer {
     bottom: 0;
-    height: 10vh;
+    height: auto;
     color: white;
     margin-top: 5vh;
     background-color: #030202;
+}
+p {
+    padding: 5px;
+    
+}
+
+.credits {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }

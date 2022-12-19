@@ -68,7 +68,9 @@ const Search = () => {
       </div>
       <div id="apicontainer" className="main-Container">
         <div className="searchContainer">
-          <label htmlFor="">Pick Muscle Group</label>
+
+          <label className='searchTitle' htmlFor="">Pick Muscle Group</label>
+
 
           <div className="search-Menu">
             <form
@@ -118,7 +120,7 @@ const Search = () => {
                 <li key={i}>{data.name}</li>
               ))}
             </div>
-            <div className="video">Youtube video</div>
+           
           </div>
         </div>
       </div>
