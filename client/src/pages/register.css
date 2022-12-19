@@ -21,7 +21,6 @@ body {
 .main-Container {
   display: flex;
   flex-direction: column;
-  margin: 20px;
   align-items: center;
 }
 .registerTitle {
