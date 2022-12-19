@@ -30,7 +30,7 @@ const SingleWorkout = () => {
         </div>
       </section>
       <section className="main-Container">
-        <div className="excercise-Container">
+        <div className="workoutContainer">
           <div className="excerciseTitle">
             <h2>Add Workout</h2>
           </div>
