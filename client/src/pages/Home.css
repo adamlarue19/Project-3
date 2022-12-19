@@ -92,12 +92,12 @@ p {
   border:none;
   border-radius:8px;
   font-size: 15px;
-  margin-left: 6vh;
-  margin-top: 3vh;
+ 
+  margin-top: 15px;
 }
 .startNowBtn:hover {
   color: black;
-  background-color:rgb(156, 40, 40)
+  background-color: var(--red);
 }
 section {
   margin-bottom: 10vh;
