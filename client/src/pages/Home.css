@@ -29,6 +29,10 @@ code {
   --green: #38d467;
   --backround: rgb(156, 40, 40);
 }
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
 .hero-section {
   background-color: #030202;
 }
@@ -139,10 +143,6 @@ section {
 
 .searchContainer {
   color: white;
-  border: white;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 20px;
   height: auto;
   width: 120vh;
   margin-top: 4vh;
