@@ -16,7 +16,14 @@ const Footer = () => {
         <div className="brand-logo" onClick={test}>
           <h1 onClick={()=>console.log("working")}>Git<span className="orange-red">Fit</span></h1>
         </div>
+        <div className='credits'>
+        <p> Created by: Adam Larue
+          </p>
+          <p>Andrew Gibbs</p>
+          <p>Ian Mosur</p>
         </div>
+        </div>
+        
       </footer>
     );
   };
