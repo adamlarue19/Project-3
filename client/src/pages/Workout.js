@@ -19,7 +19,7 @@ const Workout = () => {
       <section className="main-Container">
         <div className="excercise-Container">
           <div className="excerciseTitle">
-            <h2>Add Workout</h2>
+            <h2>Create Your Workout</h2>
           </div>
           <div className="workoutF">
           <WorkoutForm />
@@ -28,7 +28,7 @@ const Workout = () => {
       </section>
       <section className="main-Container">
         <div className="workoutContainer">
-          <div className="workoutsTitle">Workouts</div>
+          <div className="workoutsTitle">Your Workouts</div>
           <WorkoutList 
           workouts={workouts}
           />

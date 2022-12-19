@@ -32,7 +32,7 @@ const SingleWorkout = () => {
       <section className="main-Container">
         <div className="workoutContainer">
           <div className="excerciseTitle">
-            <h2>Add Workout</h2>
+            <h2>Your Excercises</h2>
           </div>
           <ExerciseList
           exercises={exercises}

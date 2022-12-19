@@ -70,7 +70,7 @@ const WorkoutForm = () => {
 
         <div className="col-12 col-lg-3">
           <button className="addWorkout-btn" type="submit">
-            Add Exercises
+            Add Workout
           </button>
         </div>
         {error && (
