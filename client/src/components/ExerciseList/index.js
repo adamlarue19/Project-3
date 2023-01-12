@@ -19,6 +19,7 @@ const ExerciseList = ({ exercises, title }) => {
                 <p className='workoutTitle'>{exercises.weight}</p>
                 <p className='workoutTitle'>{exercises.reps}</p>
                 <p className='workoutTitle'>{exercises.sets}</p>
+                console.log(exercises)
               </div>
             </div>
           ))}
