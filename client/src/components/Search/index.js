@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { apiCall } from "../../utils/axiosApi";
+import { Link } from 'react-router-dom';
 
 import image from "../../images/BMI.webp";
 import muscle from "../../images/muscle.png";
@@ -71,6 +72,7 @@ const Search = () => {
 
           <label className='searchTitle' htmlFor="">Pick Muscle Group</label>
 
+
           <div className="search-Menu">
             <form
               className="form-group"
@@ -119,7 +121,12 @@ const Search = () => {
                 <li key={i}>{data.name}</li>
               ))}
             </div>
-           
+            <h2>Build a Workout now!</h2>
+           <div className="search-Menu">
+            <Link className="startNowBtn" to="/workouts">
+                Workouts
+              </Link>
+           </div>
           </div>
         </div>
       </div>
